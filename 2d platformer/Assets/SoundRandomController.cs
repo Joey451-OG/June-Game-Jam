@@ -24,7 +24,7 @@ namespace Sound.RandomController
         {
 
         }
-private void PlaySoundClip()
+        private void PlaySoundClip()
         {
             float pitch = Random.Range(pitchminimum, pitchmaximum);
             SoundEmitter.pitch = pitch;

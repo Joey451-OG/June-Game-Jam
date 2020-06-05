@@ -23,14 +23,9 @@ public class PlayerController : MonoBehaviour
 
     public static float Health;
 
-    //By default faceRight is equal to true
-    bool faceRight = true;
 
-<<<<<<< HEAD
     public SoundRandomController JumpSoundController;
-=======
-    public float movementHor { get; private set; }
->>>>>>> 38a54ed319ad6fab09e5b90b69a36a7e45b686b7
+
 
     // Start is called before the first frame update
     private void Start()
