@@ -71,22 +71,22 @@ public class PlayerController : MonoBehaviour
         make sure that this force is an Impulse so that it happens all at once rather that gradually over time.*/
         if (Input.GetButtonDown("Jump") && Mathf.Abs(rg2D.velocity.y) < velocity)
         {
-            
+
             rg2D.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             SoundRandomController.Trigger(JumpSoundController);
         }
 
-        
+
     }
 
-   // private void FixedUpdate()
-  //  {
-   //     rg2D.velocity = new Vector2(movementHor, dirY);
-   // }
+    // private void FixedUpdate()
+    //  {
+    //     rg2D.velocity = new Vector2(movementHor, dirY);
+    // }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals ("enemy"))
+        if (collision.gameObject.name.Equals("enemy"))
         {
             Health -= 0.1f;
         }
