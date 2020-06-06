@@ -1,17 +1,12 @@
 ﻿<Properties StartupConfiguration="{900E1BDC-0A2B-8EF4-8741-87A3B13DDA1A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
-    <Files>
-      <File FileName="Assets/SoundRandomController.cs" Line="34" Column="1" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="3" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="2d platformer" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="SoundRandomController.cs" selected="True" />
             </Node>
           </Node>
         </State>

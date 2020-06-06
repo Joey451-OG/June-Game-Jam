@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sound.RandomController;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -14,22 +16,30 @@ public class Enemy : MonoBehaviour
 
     public Rigidbody2D rigidbody2d;
 
+   
+
     private void Start()
     {
-        rigidbody2d.GetComponent<Rigidbody2D>();    
+        
+        rigidbody2d.GetComponent<Rigidbody2D>();
+       
+        
+
     }
 
     private void Update()
     {
         float disToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if( disToPlayer < argoRange)
+        if (disToPlayer < argoRange)
         {
             StartChaceing();
         }
+
         else
         {
             StopChaceing();
+
         }
 
     }
@@ -39,6 +49,7 @@ public class Enemy : MonoBehaviour
         if(transform.position.x < player.position.x)
         {
             rigidbody2d.velocity = new Vector2(moveSpeed, 0);
+            
         }
         else if(transform.position.x > player.position.x)
         {
